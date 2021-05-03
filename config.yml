@@ -1,0 +1,8 @@
+name: 'Super_model'
+batch_size: 20
+total_epochs: 2
+lr: 1e-4
+loss_freq: 1
+metric_freq: 1
+lr_freq: 10
+save_freq: 1
