@@ -1,4 +1,4 @@
-from VUR-Net import *
+from VURNet import *
 from dataset_generation import *
 from train import *
 import csv
