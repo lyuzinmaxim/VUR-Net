@@ -2,6 +2,8 @@
 PyTorch model VUR-Net for phase unwrapping
 
 This is a PyTorch realisation of deep convolutional Unet-like network with extra convolutional layers, described in arcticle [1]. 
+
+# Changes
 I've added following moments to the structure:
 
 1. Replication padding mode in conv3x3 blocks, because experiments have shown that it's important at the edges of phase maps,
@@ -12,10 +14,15 @@ Dataset was generated synthetically according to articles [1,2]
 So, dataset data was generated using two methods (in equal proportions):
 
 1. Interpolation of squared matrixes (with uniformly distributed elements) of different sizes (2x2 to 15x15) to 256x256 and multiplying by random value, so the magnitude is between 0 and 22 rad
-2. Randomly generated Gaussians on 256x256 field with random quantity of functions, means, STD, and multiplying by random value, so the magnitude is between 2 and 20 rad
+2. Randomly generated Gaussians on 256x256 field with random quantity of functions, means, STD, and multiplying by random value, so the magnitude is between 2 and 20 rad. From experiments with real simple phase images it's clear, that that method makes net more adapted for real-life examples
 
 ![example1](https://user-images.githubusercontent.com/73649419/115595429-95d36d00-a2df-11eb-8d83-1a629635a66f.png)
 ![example2](https://user-images.githubusercontent.com/73649419/115595433-97049a00-a2df-11eb-95d0-73c631d73240.png)
+
+# Model
+Model can be shown as following (from original article [1]):
+
+<img src="https://user-images.githubusercontent.com/73649419/116898237-cea80600-ac3e-11eb-9e06-d1c41fd4200a.jpg" data-canonical-src="https://user-images.githubusercontent.com/73649419/116898237-cea80600-ac3e-11eb-9e06-d1c41fd4200a.jpg" width="682" height="864" align="center"/>
 
 
 # References
