@@ -26,8 +26,11 @@ Model can be shown as following (from original article [1]):
 
 # Training info
 In original paper authors describe train hyperparameters as follows:
+
 loss: pixelwise MAE
+
 optimizer: Adam 
+
 learning rate: 2e-4 and "divided by 2 when learning stagnates"
 
 # References
