@@ -24,6 +24,11 @@ Model can be shown as following (from original article [1]):
 
 <img src="https://user-images.githubusercontent.com/73649419/116898237-cea80600-ac3e-11eb-9e06-d1c41fd4200a.jpg" data-canonical-src="https://user-images.githubusercontent.com/73649419/116898237-cea80600-ac3e-11eb-9e06-d1c41fd4200a.jpg" width="682" height="864" align="center"/>
 
+# Training info
+In original paper authors describe train hyperparameters as follows:
+loss: pixelwise MAE
+optimizer: Adam 
+learning rate: 2e-4 and "divided by 2 when learning stagnates"
 
 # References
 1. Qin, Y., Wan, S., Wan, Y., Weng, J., Liu, W., & Gong, Q. (2020). Direct and accurate phase unwrapping with deep neural network. Applied optics, 59 24, 7258-7267 .
