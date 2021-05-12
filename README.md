@@ -33,7 +33,7 @@ optimizer: Adam
 
 learning rate: 2e-4 and "divided by 2 when learning stagnates"
 
-Succeed train to zero cost (0.01) with Adam 0.0001 very fast
+Succeed train to zero cost (0.0162) at epoch 500 with Adam 0.0001 very fast
 
 # References
 1. Qin, Y., Wan, S., Wan, Y., Weng, J., Liu, W., & Gong, Q. (2020). Direct and accurate phase unwrapping with deep neural network. Applied optics, 59 24, 7258-7267 .
