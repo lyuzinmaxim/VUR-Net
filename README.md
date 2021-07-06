@@ -3,6 +3,10 @@ PyTorch model VUR-Net for phase unwrapping
 
 This is a PyTorch realisation of deep convolutional Unet-like network with extra convolutional layers, described in arcticle [1].    
 
+# Usage
+
+`<pip install -r example-requirements.txt>`
+
 # Changes
 I've added following moments to the structure:
 
